@@ -1,0 +1,143 @@
+/* ===========================
+   PÁGINA DE CONTATO
+   =========================== */
+#contato-pagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.contato-grid {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* ===========================
+   CARDS
+   =========================== */
+.card-formulario,
+.card-info {
+  background-color: white;
+  border: 1px solid #e0c0c5;
+  border-radius: var(--radius);
+  padding: 24px;
+  width: 50%;
+}
+
+.card-formulario h3,
+.card-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.card-info h3 {
+  margin-top: 16px;
+}
+
+.card-info h3:first-child {
+  margin-top: 0;
+}
+
+/* ===========================
+   FORMULÁRIO
+   =========================== */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.obrigatorio {
+  color: var(--primary);
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  background-color: white;
+  border: 1px solid #e0c0c5;
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9a8a8e;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.btn-enviar {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 14px 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.btn-enviar:hover {
+  background-color: var(--primary);
+}
+
+/* ===========================
+   INFORMAÇÕES DE CONTATO
+   =========================== */
+.card-info p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.card-info a {
+  color: var(--text);
+}
+
+.card-info a:hover {
+  color: var(--accent);
+}
+
+.card-info ul {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.card-info ul a {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card-info ul a:hover {
+  background-color: var(--primary);
+}
