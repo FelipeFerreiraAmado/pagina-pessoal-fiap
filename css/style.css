@@ -44,54 +44,6 @@ img {
 }
 
 /* ===========================
-   HEADER / NAV
-   =========================== */
-header {
-  background-color: var(--text);
-  position: sticky;
-  top: 0;
-}
-
-nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 24px;
-}
-
-nav p {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-nav p img {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-}
-
-nav ul {
-  display: flex;
-  gap: 24px;
-}
-
-nav ul a {
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-nav ul a:hover {
-  color: var(--secondary);
-}
-
-/* ===========================
    HERO (INÍCIO)
    =========================== */
 #inicio {
@@ -322,17 +274,72 @@ td {
 }
 
 /* ===========================
-   FOOTER
+   TABLET (até 1024px)
    =========================== */
-footer {
-  background-color: var(--text);
-  color: white;
-  text-align: center;
-  padding: 28px 24px;
-  margin-top: 40px;
+@media (max-width: 1024px) {
+  section {
+    padding: 40px 20px;
+  }
+
+  #inicio {
+    padding: 64px 20px 48px;
+  }
+
+  #inicio h1 {
+    font-size: 2.2rem;
+  }
+
+  #projetos article {
+    width: 47%;
+    margin-right: 3%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
 }
 
-footer p {
-  font-size: 0.88rem;
-  margin-bottom: 4px;
+/* ===========================
+   MOBILE (até 600px)
+   =========================== */
+@media (max-width: 600px) {
+  section {
+    padding: 32px 16px;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  #inicio {
+    padding: 48px 16px 40px;
+  }
+
+  #inicio h1 {
+    font-size: 1.8rem;
+  }
+
+  #inicio p {
+    font-size: 1rem;
+  }
+
+  #inicio a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  #objetivo {
+    padding: 20px;
+  }
+
+  #projetos article {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #contato ul {
+    flex-wrap: wrap;
+  }
 }

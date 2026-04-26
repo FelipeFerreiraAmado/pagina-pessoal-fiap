@@ -42,71 +42,6 @@
 }
 
 /* ===========================
-   FORMULÁRIO
-   =========================== */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--accent);
-  margin-bottom: 6px;
-}
-
-.obrigatorio {
-  color: var(--primary);
-}
-
-input,
-textarea {
-  font-family: inherit;
-  font-size: 0.95rem;
-  color: var(--text);
-  background-color: white;
-  border: 1px solid #e0c0c5;
-  border-radius: var(--radius);
-  padding: 10px 14px;
-  margin-bottom: 16px;
-  width: 100%;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #9a8a8e;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--accent);
-}
-
-textarea {
-  resize: vertical;
-  min-height: 110px;
-}
-
-.btn-enviar {
-  background-color: var(--accent);
-  color: white;
-  border: none;
-  border-radius: var(--radius);
-  padding: 14px 24px;
-  font-size: 0.95rem;
-  font-weight: 700;
-  font-family: inherit;
-  cursor: pointer;
-  margin-top: 8px;
-}
-
-.btn-enviar:hover {
-  background-color: var(--primary);
-}
-
-/* ===========================
    INFORMAÇÕES DE CONTATO
    =========================== */
 .card-info p {
@@ -140,4 +75,41 @@ textarea {
 
 .card-info ul a:hover {
   background-color: var(--primary);
+}
+
+/* ===========================
+   TABLET (até 1024px)
+   =========================== */
+@media (max-width: 1024px) {
+  #contato-pagina {
+    padding: 40px 20px;
+  }
+
+  .contato-grid {
+    gap: 16px;
+  }
+}
+
+/* ===========================
+   MOBILE (até 600px)
+   =========================== */
+@media (max-width: 600px) {
+  #contato-pagina {
+    padding: 32px 16px;
+  }
+
+  .contato-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card-formulario,
+  .card-info {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-info ul {
+    flex-wrap: wrap;
+  }
 }
