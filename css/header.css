@@ -48,6 +48,42 @@ nav ul a:hover {
 }
 
 /* ===========================
+   BOTÃO HAMBURGUER
+   =========================== */
+.btn-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 32px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.btn-menu.ativo span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.btn-menu.ativo span:nth-child(2) {
+  opacity: 0;
+}
+
+.btn-menu.ativo span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* ===========================
    TABLET (até 1024px)
    =========================== */
 @media (max-width: 1024px) {
@@ -69,18 +105,28 @@ nav ul a:hover {
    =========================== */
 @media (max-width: 600px) {
   nav {
-    flex-direction: column;
-    gap: 12px;
+    flex-wrap: wrap;
     padding: 12px;
   }
 
+  .btn-menu {
+    display: flex;
+  }
+
   nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    padding: 12px 0 4px;
+    text-align: center;
+  }
+
+  nav ul.ativo {
+    display: flex;
   }
 
   nav ul a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }

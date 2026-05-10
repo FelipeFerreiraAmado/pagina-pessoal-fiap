@@ -26,7 +26,7 @@ textarea {
   border: 1px solid #e0c0c5;
   border-radius: var(--radius);
   padding: 10px 14px;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
   width: 100%;
 }
 
@@ -39,6 +39,36 @@ input:focus,
 textarea:focus {
   outline: none;
   border-color: var(--accent);
+}
+
+input.invalido,
+textarea.invalido {
+  border-color: var(--primary);
+}
+
+.erro {
+  display: block;
+  min-height: 18px;
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mensagem-sucesso {
+  display: none;
+  background-color: var(--secondary);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.mensagem-sucesso.visivel {
+  display: block;
 }
 
 textarea {

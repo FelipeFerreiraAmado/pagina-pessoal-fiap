@@ -17,6 +17,11 @@
     <nav>
       <p><img width="64" height="64" alt="ui-avatars"
           src="https://ui-avatars.com/api/?background=9F1239&color=4C0519&name=Felipe+Amado" /> Portfolio</p>
+      <button class="btn-menu" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul>
         <li><a href="../index.html#sobre-mim">Sobre Mim</a></li>
         <li><a href="../index.html#objetivo">Objetivo Profissional</a></li>
@@ -37,18 +42,25 @@
         <article class="card-formulario">
           <h3>Envie sua mensagem</h3>
 
-          <form>
+          <form id="form-contato" novalidate>
             <label for="nome">Nome <span class="obrigatorio">*</span></label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+            <span class="erro" id="erro-nome"></span>
 
             <label for="email">E-mail <span class="obrigatorio">*</span></label>
-            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            <input type="email" id="email" name="email" placeholder="seu@email.com">
+            <span class="erro" id="erro-email"></span>
 
             <label for="mensagem">Mensagem <span class="obrigatorio">*</span></label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+            <span class="erro" id="erro-mensagem"></span>
 
             <button type="submit" class="btn-enviar">Enviar Mensagem</button>
           </form>
+
+          <div class="mensagem-sucesso" id="mensagem-sucesso" role="status">
+            ✓ Mensagem enviada com sucesso! Em breve entrarei em contato.
+          </div>
         </article>
 
         <article class="card-info">
@@ -70,6 +82,12 @@
     <p>&copy; 2026 Felipe Amado - Todos os direitos reservados</p>
     <p>Desenvolvido com dedicação e café ☕</p>
   </footer>
+
+  <button class="btn-topo" aria-label="Voltar ao topo">↑</button>
+
+  <script src="../js/mobile.js"></script>
+  <script src="../js/form.js"></script>
+  <script src="../js/index.js"></script>
 </body>
 
 </html>

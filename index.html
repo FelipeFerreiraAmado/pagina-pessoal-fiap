@@ -15,6 +15,11 @@
     <nav>
       <p><img width="64" height="64" alt="ui-avatars"
           src="https://ui-avatars.com/api/?background=9F1239&color=4C0519&name=Felipe+Amado" /> Portfolio</p>
+      <button class="btn-menu" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <ul>
         <li><a href="#sobre-mim">Sobre Mim</a></li>
         <li><a href="#objetivo">Objetivo Profissional</a></li>
@@ -52,40 +57,58 @@
     <section id="habilidades">
       <h2>Habilidades</h2>
 
-      <h3>Hard Skills</h3>
-      <ul>
-        <li>Programação em Python</li>
-        <li>Desenvolvimento Web (HTML, CSS, JavaScript)</li>
-        <li>Bancos de Dados (SQL)</li>
-        <li>Git e GitHub</li>
-        <li>Estruturas de Dados e Algoritmos</li>
-        <li>Programação Orientada a Objetos</li>
-      </ul>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-cabecalho" type="button">
+            <span>Hard Skills</span>
+            <span class="accordion-icone">+</span>
+          </button>
+          <div class="accordion-conteudo">
+            <ul>
+              <li>Programação em Python</li>
+              <li>Desenvolvimento Web (HTML, CSS, JavaScript)</li>
+              <li>Bancos de Dados (SQL)</li>
+              <li>Git e GitHub</li>
+              <li>Estruturas de Dados e Algoritmos</li>
+              <li>Programação Orientada a Objetos</li>
+            </ul>
+          </div>
+        </div>
 
-      <h3>Soft Skills</h3>
-      <ul>
-        <li>Trabalho em Equipe</li>
-        <li>Comunicação Efetiva</li>
-        <li>Resolução de Problemas</li>
-        <li>Adaptabilidade</li>
-        <li>Organização</li>
-        <li>Apresentação e Oratória</li>
-      </ul>
+        <div class="accordion-item">
+          <button class="accordion-cabecalho" type="button">
+            <span>Soft Skills</span>
+            <span class="accordion-icone">+</span>
+          </button>
+          <div class="accordion-conteudo">
+            <ul>
+              <li>Trabalho em Equipe</li>
+              <li>Comunicação Efetiva</li>
+              <li>Resolução de Problemas</li>
+              <li>Adaptabilidade</li>
+              <li>Organização</li>
+              <li>Apresentação e Oratória</li>
+            </ul>
+          </div>
+        </div>
 
-      <h3>Tecnologias</h3>
-      <ul>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>MySQL / PostgreSQL</li>
-        <li>Visual Studio Code</li>
-        <li>Linux / Windows</li>
-        <li>APIs REST</li>
-      </ul>
-
-      <details>
-        <summary>Detalhes das Habilidades</summary>
-        <p>Informações adicionais sobre as competências técnicas e interpessoais.</p>
-      </details>
+        <div class="accordion-item">
+          <button class="accordion-cabecalho" type="button">
+            <span>Tecnologias</span>
+            <span class="accordion-icone">+</span>
+          </button>
+          <div class="accordion-conteudo">
+            <ul>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>MySQL / PostgreSQL</li>
+              <li>Visual Studio Code</li>
+              <li>Linux / Windows</li>
+              <li>APIs REST</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="formacao">
@@ -213,6 +236,11 @@
     <p>&copy; 2026 Felipe Amado - Todos os direitos reservados</p>
     <p>Desenvolvido com dedicação e café ☕</p>
   </footer>
+
+  <button class="btn-topo" aria-label="Voltar ao topo">↑</button>
+
+  <script src="js/mobile.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
