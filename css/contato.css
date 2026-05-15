@@ -1,7 +1,7 @@
 /* ===========================
    PÁGINA DE CONTATO
    =========================== */
-#contato-pagina {
+#contato {
   max-width: 1200px;
   margin: 0 auto;
   padding: 48px 24px;
@@ -81,7 +81,7 @@
    TABLET (até 1024px)
    =========================== */
 @media (max-width: 1024px) {
-  #contato-pagina {
+  #contato {
     padding: 40px 20px;
   }
 
@@ -94,7 +94,7 @@
    MOBILE (até 600px)
    =========================== */
 @media (max-width: 600px) {
-  #contato-pagina {
+  #contato {
     padding: 32px 16px;
   }
 

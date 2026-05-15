@@ -267,45 +267,6 @@ td {
 }
 
 /* ===========================
-   CONTATO
-   =========================== */
-#contato h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--primary);
-  margin-top: 16px;
-  margin-bottom: 8px;
-}
-
-#contato a {
-  color: var(--text);
-}
-
-#contato a:hover {
-  color: var(--accent);
-}
-
-#contato ul {
-  display: flex;
-  gap: 10px;
-  margin-top: 8px;
-}
-
-#contato ul a {
-  display: inline-block;
-  background-color: var(--accent);
-  color: white;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-#contato ul a:hover {
-  background-color: var(--primary);
-}
-
-/* ===========================
    BOTÃO VOLTAR AO TOPO
    =========================== */
 .btn-topo {
@@ -403,10 +364,6 @@ td {
     display: block;
     width: 100%;
     margin-right: 0;
-  }
-
-  #contato ul {
-    flex-wrap: wrap;
   }
 
   .btn-topo {
