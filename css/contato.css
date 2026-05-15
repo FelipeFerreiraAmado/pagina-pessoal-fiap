@@ -1,0 +1,115 @@
+/* ===========================
+   PÁGINA DE CONTATO
+   =========================== */
+#contato {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.contato-grid {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* ===========================
+   CARDS
+   =========================== */
+.card-formulario,
+.card-info {
+  background-color: white;
+  border: 1px solid #e0c0c5;
+  border-radius: var(--radius);
+  padding: 24px;
+  width: 50%;
+}
+
+.card-formulario h3,
+.card-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.card-info h3 {
+  margin-top: 16px;
+}
+
+.card-info h3:first-child {
+  margin-top: 0;
+}
+
+/* ===========================
+   INFORMAÇÕES DE CONTATO
+   =========================== */
+.card-info p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.card-info a {
+  color: var(--text);
+}
+
+.card-info a:hover {
+  color: var(--accent);
+}
+
+.card-info ul {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.card-info ul a {
+  display: inline-block;
+  background-color: var(--accent);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card-info ul a:hover {
+  background-color: var(--primary);
+}
+
+/* ===========================
+   TABLET (até 1024px)
+   =========================== */
+@media (max-width: 1024px) {
+  #contato {
+    padding: 40px 20px;
+  }
+
+  .contato-grid {
+    gap: 16px;
+  }
+}
+
+/* ===========================
+   MOBILE (até 600px)
+   =========================== */
+@media (max-width: 600px) {
+  #contato {
+    padding: 32px 16px;
+  }
+
+  .contato-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card-formulario,
+  .card-info {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-info ul {
+    flex-wrap: wrap;
+  }
+}
